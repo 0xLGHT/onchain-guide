@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-Semibold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-LightItalic.otf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-SemiboldItalic.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: 'SF UI Text', sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 3.5em;
+    font-style: bold;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 25px;
+  }
+  
+  .grid p {
+    margin: 0;
+  }
+
+  .grid a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.69em;
+    transition: all 0.5s ease;
+    display: inline-block;
+  }
+  
+  .grid a:hover {
+    color: #ADADAD;
+    transform: translateY(-10px);
+  }
+
+  @media screen and (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .container {
+        text-align: left;
+      }
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        font-style: bold;
+      }
+  }
